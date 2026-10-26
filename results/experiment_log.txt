@@ -1,0 +1,6 @@
+default rules, stream false-alarm rate on clean data: {'psi>0.1': 0.8233333333333334, 'psi>0.2': 0.006666666666666667, 'ks_p<0.05': 0.74}
+psi thr=0.1717 done 14s
+ks thr=0.1441 done 66s
+wasserstein thr=0.2423 done 75s
+mmd thr=0.01475 done 523s
+mean_z thr=3.079 done 525s

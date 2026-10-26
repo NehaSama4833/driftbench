@@ -1,0 +1,546 @@
+{
+ "config": {
+  "N_REF": 1000,
+  "BATCH": 200,
+  "NB_PRE": 30,
+  "NB_POST": 30,
+  "ALPHA": 0.05,
+  "cal_reps": 300,
+  "reps": 100,
+  "seed": 1
+ },
+ "default_rules_far": {
+  "psi>0.1": 0.8233333333333334,
+  "psi>0.2": 0.006666666666666667,
+  "ks_p<0.05": 0.74
+ },
+ "thresholds": {
+  "psi": 0.1716919692287477,
+  "ks": 0.14405000000000004,
+  "wasserstein": 0.2422502965441821,
+  "mmd": 0.014754854012828517,
+  "mean_z": 3.0787898869534422
+ },
+ "cells": [
+  {
+   "det": "psi",
+   "kind": "null",
+   "mag": 0,
+   "power": null,
+   "far": 0.04,
+   "median_delay": null
+  },
+  {
+   "det": "psi",
+   "kind": "mean",
+   "mag": 0.1,
+   "power": 0.14,
+   "far": 0.09,
+   "median_delay": 9.5
+  },
+  {
+   "det": "psi",
+   "kind": "mean",
+   "mag": 0.2,
+   "power": 0.7,
+   "far": 0.09,
+   "median_delay": 10.5
+  },
+  {
+   "det": "psi",
+   "kind": "mean",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.09,
+   "median_delay": 1.0
+  },
+  {
+   "det": "psi",
+   "kind": "scale",
+   "mag": 0.1,
+   "power": 0.17,
+   "far": 0.09,
+   "median_delay": 8.0
+  },
+  {
+   "det": "psi",
+   "kind": "scale",
+   "mag": 0.25,
+   "power": 0.92,
+   "far": 0.09,
+   "median_delay": 3.5
+  },
+  {
+   "det": "psi",
+   "kind": "scale",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.09,
+   "median_delay": 1.0
+  },
+  {
+   "det": "psi",
+   "kind": "bimodal",
+   "mag": 0.5,
+   "power": 0.03,
+   "far": 0.07,
+   "median_delay": 22.0
+  },
+  {
+   "det": "psi",
+   "kind": "bimodal",
+   "mag": 0.8,
+   "power": 0.84,
+   "far": 0.07,
+   "median_delay": 9.0
+  },
+  {
+   "det": "psi",
+   "kind": "bimodal",
+   "mag": 0.95,
+   "power": 1.0,
+   "far": 0.07,
+   "median_delay": 1.0
+  },
+  {
+   "det": "psi",
+   "kind": "tail",
+   "mag": 0.5,
+   "power": 0.27,
+   "far": 0.06,
+   "median_delay": 13.0
+  },
+  {
+   "det": "psi",
+   "kind": "tail",
+   "mag": 0.8,
+   "power": 0.95,
+   "far": 0.05,
+   "median_delay": 3.0
+  },
+  {
+   "det": "psi",
+   "kind": "tail",
+   "mag": 1.0,
+   "power": 0.97,
+   "far": 0.06,
+   "median_delay": 2.0
+  },
+  {
+   "det": "ks",
+   "kind": "null",
+   "mag": 0,
+   "power": null,
+   "far": 0.02,
+   "median_delay": null
+  },
+  {
+   "det": "ks",
+   "kind": "mean",
+   "mag": 0.1,
+   "power": 0.45,
+   "far": 0.05,
+   "median_delay": 11.0
+  },
+  {
+   "det": "ks",
+   "kind": "mean",
+   "mag": 0.2,
+   "power": 0.96,
+   "far": 0.05,
+   "median_delay": 5.0
+  },
+  {
+   "det": "ks",
+   "kind": "mean",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.05,
+   "median_delay": 1.0
+  },
+  {
+   "det": "ks",
+   "kind": "scale",
+   "mag": 0.1,
+   "power": 0.14,
+   "far": 0.05,
+   "median_delay": 12.0
+  },
+  {
+   "det": "ks",
+   "kind": "scale",
+   "mag": 0.25,
+   "power": 0.57,
+   "far": 0.05,
+   "median_delay": 11.0
+  },
+  {
+   "det": "ks",
+   "kind": "scale",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.05,
+   "median_delay": 2.0
+  },
+  {
+   "det": "ks",
+   "kind": "bimodal",
+   "mag": 0.5,
+   "power": 0.03,
+   "far": 0.02,
+   "median_delay": 13.0
+  },
+  {
+   "det": "ks",
+   "kind": "bimodal",
+   "mag": 0.8,
+   "power": 0.53,
+   "far": 0.02,
+   "median_delay": 11.0
+  },
+  {
+   "det": "ks",
+   "kind": "bimodal",
+   "mag": 0.95,
+   "power": 1.0,
+   "far": 0.02,
+   "median_delay": 1.0
+  },
+  {
+   "det": "ks",
+   "kind": "tail",
+   "mag": 0.5,
+   "power": 0.12,
+   "far": 0.06,
+   "median_delay": 21.5
+  },
+  {
+   "det": "ks",
+   "kind": "tail",
+   "mag": 0.8,
+   "power": 0.65,
+   "far": 0.02,
+   "median_delay": 9.0
+  },
+  {
+   "det": "ks",
+   "kind": "tail",
+   "mag": 1.0,
+   "power": 0.87,
+   "far": 0.08,
+   "median_delay": 7.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "null",
+   "mag": 0,
+   "power": null,
+   "far": 0.05,
+   "median_delay": null
+  },
+  {
+   "det": "wasserstein",
+   "kind": "mean",
+   "mag": 0.1,
+   "power": 0.62,
+   "far": 0.09,
+   "median_delay": 10.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "mean",
+   "mag": 0.2,
+   "power": 0.99,
+   "far": 0.09,
+   "median_delay": 2.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "mean",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.09,
+   "median_delay": 1.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "scale",
+   "mag": 0.1,
+   "power": 0.23,
+   "far": 0.09,
+   "median_delay": 15.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "scale",
+   "mag": 0.25,
+   "power": 1.0,
+   "far": 0.09,
+   "median_delay": 2.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "scale",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.09,
+   "median_delay": 1.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "bimodal",
+   "mag": 0.5,
+   "power": 0.03,
+   "far": 0.04,
+   "median_delay": 13.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "bimodal",
+   "mag": 0.8,
+   "power": 0.05,
+   "far": 0.04,
+   "median_delay": 14.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "bimodal",
+   "mag": 0.95,
+   "power": 1.0,
+   "far": 0.04,
+   "median_delay": 1.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "tail",
+   "mag": 0.5,
+   "power": 0.11,
+   "far": 0.08,
+   "median_delay": 19.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "tail",
+   "mag": 0.8,
+   "power": 0.78,
+   "far": 0.07,
+   "median_delay": 7.0
+  },
+  {
+   "det": "wasserstein",
+   "kind": "tail",
+   "mag": 1.0,
+   "power": 1.0,
+   "far": 0.08,
+   "median_delay": 1.0
+  },
+  {
+   "det": "mmd",
+   "kind": "null",
+   "mag": 0,
+   "power": null,
+   "far": 0.05,
+   "median_delay": null
+  },
+  {
+   "det": "mmd",
+   "kind": "mean",
+   "mag": 0.1,
+   "power": 0.39,
+   "far": 0.06,
+   "median_delay": 11.0
+  },
+  {
+   "det": "mmd",
+   "kind": "mean",
+   "mag": 0.2,
+   "power": 0.89,
+   "far": 0.06,
+   "median_delay": 5.0
+  },
+  {
+   "det": "mmd",
+   "kind": "mean",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.06,
+   "median_delay": 1.0
+  },
+  {
+   "det": "mmd",
+   "kind": "scale",
+   "mag": 0.1,
+   "power": 0.23,
+   "far": 0.06,
+   "median_delay": 15.0
+  },
+  {
+   "det": "mmd",
+   "kind": "scale",
+   "mag": 0.25,
+   "power": 1.0,
+   "far": 0.06,
+   "median_delay": 3.0
+  },
+  {
+   "det": "mmd",
+   "kind": "scale",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.06,
+   "median_delay": 1.0
+  },
+  {
+   "det": "mmd",
+   "kind": "bimodal",
+   "mag": 0.5,
+   "power": 0.05,
+   "far": 0.02,
+   "median_delay": 8.0
+  },
+  {
+   "det": "mmd",
+   "kind": "bimodal",
+   "mag": 0.8,
+   "power": 0.4,
+   "far": 0.02,
+   "median_delay": 9.0
+  },
+  {
+   "det": "mmd",
+   "kind": "bimodal",
+   "mag": 0.95,
+   "power": 1.0,
+   "far": 0.02,
+   "median_delay": 1.0
+  },
+  {
+   "det": "mmd",
+   "kind": "tail",
+   "mag": 0.5,
+   "power": 0.16,
+   "far": 0.06,
+   "median_delay": 11.5
+  },
+  {
+   "det": "mmd",
+   "kind": "tail",
+   "mag": 0.8,
+   "power": 0.92,
+   "far": 0.01,
+   "median_delay": 4.0
+  },
+  {
+   "det": "mmd",
+   "kind": "tail",
+   "mag": 1.0,
+   "power": 0.97,
+   "far": 0.07,
+   "median_delay": 3.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "null",
+   "mag": 0,
+   "power": null,
+   "far": 0.06,
+   "median_delay": null
+  },
+  {
+   "det": "mean_z",
+   "kind": "mean",
+   "mag": 0.1,
+   "power": 0.61,
+   "far": 0.07,
+   "median_delay": 11.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "mean",
+   "mag": 0.2,
+   "power": 0.99,
+   "far": 0.07,
+   "median_delay": 2.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "mean",
+   "mag": 0.5,
+   "power": 1.0,
+   "far": 0.07,
+   "median_delay": 1.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "scale",
+   "mag": 0.1,
+   "power": 0.05,
+   "far": 0.07,
+   "median_delay": 17.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "scale",
+   "mag": 0.25,
+   "power": 0.04,
+   "far": 0.07,
+   "median_delay": 12.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "scale",
+   "mag": 0.5,
+   "power": 0.06,
+   "far": 0.07,
+   "median_delay": 14.5
+  },
+  {
+   "det": "mean_z",
+   "kind": "bimodal",
+   "mag": 0.5,
+   "power": 0.03,
+   "far": 0.05,
+   "median_delay": 13.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "bimodal",
+   "mag": 0.8,
+   "power": 0.02,
+   "far": 0.05,
+   "median_delay": 13.5
+  },
+  {
+   "det": "mean_z",
+   "kind": "bimodal",
+   "mag": 0.95,
+   "power": 0.06,
+   "far": 0.05,
+   "median_delay": 13.5
+  },
+  {
+   "det": "mean_z",
+   "kind": "tail",
+   "mag": 0.5,
+   "power": 0.05,
+   "far": 0.08,
+   "median_delay": 19.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "tail",
+   "mag": 0.8,
+   "power": 0.02,
+   "far": 0.07,
+   "median_delay": 16.0
+  },
+  {
+   "det": "mean_z",
+   "kind": "tail",
+   "mag": 1.0,
+   "power": 0.03,
+   "far": 0.08,
+   "median_delay": 10.0
+  }
+ ]
+}
